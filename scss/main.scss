@@ -1,0 +1,73 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #121212;
+  margin: 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 1rem 5rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  #indicator {
+    position: absolute;
+    left: 3.8%;
+    bottom: 5px;
+    width: 30px;
+    height: 3px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    transition: 0.4s ease left;
+  }
+
+  .logo-navbar {
+    margin: 0;
+    color: #FFFFFF;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar a {
+    position: relative;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 0px 15px;
+    transition: 0.2s ease color;
+  }
+
+  .navbar a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  .navbar a:nth-child(1):hover ~ #indicator {
+    background: #FFFFFF;
+  }
+
+  .navbar a:nth-child(2):hover ~ #indicator {
+    left: 24%;
+    background: linear-gradient(130deg, yellow, red);
+  }
+
+  .navbar a:nth-child(3):hover ~ #indicator {
+    left: 53%;
+    background: linear-gradient(130deg, purple, palevioletred);
+  }
+
+  .navbar a:nth-child(4):hover ~ #indicator {
+    left: 75.4%;
+    background: linear-gradient(130deg, #00e2ff, #89ff00);
+  }
+}
