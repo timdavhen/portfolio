@@ -1,39 +1,50 @@
-html, body {
-  height: 100%; }
-
 body {
-  background-color: #121212;
-  margin: 0; }
+  background-color: #121212; }
+
+@font-face {
+  font-family: 'Aqua';
+  src: url("../fonts/Aqua.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'NimbusSans-Light';
+  src: url("../fonts/NimbusSans-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Volkhov-Regular';
+  src: url("../fonts/Volkhov-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Volkhov-Bold';
+  src: url("../fonts/Volkhov-Bold.ttf") format("truetype"); }
 
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  padding: 1rem 5rem;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0; }
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 2rem 0 10rem 0; }
   .navbar-container #indicator {
     position: absolute;
     left: 3.8%;
-    bottom: 5px;
+    bottom: -3px;
     width: 30px;
     height: 3px;
     background-color: #FFFFFF;
     border-radius: 5px;
     transition: 0.4s ease left; }
-  .navbar-container .logo-navbar {
+  .navbar-container .logo-navbar h2 {
     margin: 0;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    font-family: "Aqua";
+    font-size: 18px; }
   .navbar-container .navbar {
     padding: 0; }
   .navbar-container .navbar a {
+    font-family: "Aqua";
     position: relative;
     color: #FFFFFF;
     text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+    font-size: 18px;
     padding: 0px 15px;
     transition: 0.2s ease color; }
   .navbar-container .navbar a:hover {
@@ -42,11 +53,131 @@ body {
   .navbar-container .navbar a:nth-child(1):hover ~ #indicator {
     background: #FFFFFF; }
   .navbar-container .navbar a:nth-child(2):hover ~ #indicator {
-    left: 24%;
+    left: 25.5%;
     background: linear-gradient(130deg, yellow, red); }
   .navbar-container .navbar a:nth-child(3):hover ~ #indicator {
-    left: 53%;
+    left: 53.5%;
     background: linear-gradient(130deg, purple, palevioletred); }
   .navbar-container .navbar a:nth-child(4):hover ~ #indicator {
-    left: 75.4%;
+    left: 76%;
     background: linear-gradient(130deg, #00e2ff, #89ff00); }
+
+.about-me-container {
+  color: #FFFFFF;
+  width: 90%;
+  margin: 0 auto; }
+  .about-me-container .web-developer-card, .about-me-container .visual-storyteller-card {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10rem; }
+    .about-me-container .web-developer-card .web-delevoper-image img, .about-me-container .web-developer-card .visual-storyteller-image img, .about-me-container .visual-storyteller-card .web-delevoper-image img, .about-me-container .visual-storyteller-card .visual-storyteller-image img {
+      width: 500px;
+      height: 500px;
+      border-radius: 20px; }
+    .about-me-container .web-developer-card .web-developer-text, .about-me-container .visual-storyteller-card .web-developer-text {
+      height: 500px;
+      width: 500px;
+      position: relative;
+      top: -30px; }
+      .about-me-container .web-developer-card .web-developer-text h1, .about-me-container .visual-storyteller-card .web-developer-text h1 {
+        font-family: "Volkhov-Regular";
+        line-height: 150%;
+        font-size: 35px;
+        letter-spacing: -0.5px;
+        margin-bottom: 0; }
+      .about-me-container .web-developer-card .web-developer-text p, .about-me-container .visual-storyteller-card .web-developer-text p {
+        font-family: "NimbusSans-Light";
+        font-size: 18px;
+        opacity: 0.9;
+        letter-spacing: 0.8px;
+        margin-bottom: 0;
+        line-height: 32px; }
+    .about-me-container .web-developer-card .visual-storyteller-text, .about-me-container .visual-storyteller-card .visual-storyteller-text {
+      width: 500px;
+      height: 500px;
+      position: relative;
+      top: -10px; }
+      .about-me-container .web-developer-card .visual-storyteller-text h1, .about-me-container .visual-storyteller-card .visual-storyteller-text h1 {
+        font-family: "Volkhov-Regular";
+        line-height: 150%;
+        font-size: 35px;
+        letter-spacing: -0.5px;
+        margin-bottom: 0; }
+      .about-me-container .web-developer-card .visual-storyteller-text p, .about-me-container .visual-storyteller-card .visual-storyteller-text p {
+        font-family: "NimbusSans-Light";
+        letter-spacing: 0.8px;
+        font-size: 18px;
+        opacity: 0.9;
+        margin-bottom: 0;
+        line-height: 32px; }
+  .about-me-container .random-facts-container .random-facts-header h1 {
+    text-align: center;
+    font-family: "Volkhov-Regular";
+    font-size: 35px;
+    letter-spacing: -0.5px;
+    margin-bottom: 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem; }
+  .about-me-container .random-facts-container .factsCarousel {
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-bottom: 10rem; }
+    .about-me-container .random-facts-container .factsCarousel .facts {
+      text-align: center;
+      overflow: hidden;
+      height: 65px; }
+      .about-me-container .random-facts-container .factsCarousel .facts h2 {
+        background: linear-gradient(271deg, #a0e9ff 30%, #a162e8 50%, #f093b0 70%, #edca85 94%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Volkhov-Bold";
+        letter-spacing: -0.5px;
+        margin-bottom: 0;
+        font-size: 48px;
+        padding-bottom: 3rem; }
+        .about-me-container .random-facts-container .factsCarousel .facts h2 ul {
+          padding: 0; }
+          .about-me-container .random-facts-container .factsCarousel .facts h2 ul li {
+            height: 45px;
+            margin-bottom: 45px;
+            display: block; }
+  .about-me-container .random-facts-container .flip8 {
+    animation: flip8 20s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+@keyframes flip8 {
+  0% {
+    margin-top: -720px; }
+  6.25% {
+    margin-top: -630px; }
+  12.5% {
+    margin-top: -630px; }
+  18.75% {
+    margin-top: -540px; }
+  25% {
+    margin-top: -540px; }
+  31.25% {
+    margin-top: -450px; }
+  37.5% {
+    margin-top: -450px; }
+  43.75% {
+    margin-top: -360px; }
+  50% {
+    margin-top: -360px; }
+  56.25% {
+    margin-top: -270px; }
+  62.5% {
+    margin-top: -270px; }
+  68.75% {
+    margin-top: -180px; }
+  75% {
+    margin-top: -180px; }
+  81.75% {
+    margin-top: -90px; }
+  88% {
+    margin-top: -90px; }
+  94.25% {
+    margin-top: 0px; }
+  99.99% {
+    margin-top: 0px; }
+  100% {
+    margin-top: -630px; } }
