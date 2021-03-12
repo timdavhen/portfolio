@@ -1,0 +1,75 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 2rem 0 10rem 0;
+
+  #indicator {
+    position: absolute;
+    left: 0%;
+    bottom: -4px;
+    width: 30px;
+    height: 3px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    transition: 0.4s ease left;
+  }
+
+  .logo-navbar h2 {
+    margin: 0;
+    color: #FFFFFF;
+    font-family: "Aqua";
+    font-size: 18px;
+  }
+
+  .social-link {
+
+    .linkedin img {
+      width: 35px;
+      height: 35px;
+      position: relative;
+      top: -2px;
+    }
+  }
+
+  .navbar {
+    position: relative;
+    right: 52px;
+    padding: 0;
+  }
+
+  .navbar a {
+    font-family: "Aqua";
+    position: relative;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0px 15px;
+    transition: 0.2s ease color;
+  }
+
+  .navbar a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  .navbar a:nth-child(1):hover ~ #indicator {
+    background: #FFFFFF;
+  }
+
+  .navbar a:nth-child(2):hover ~ #indicator {
+    left: 25.2%;
+    background: linear-gradient(130deg, yellow, red);
+  }
+
+  .navbar a:nth-child(3):hover ~ #indicator {
+    left: 53.5%;
+    background: linear-gradient(130deg, purple, palevioletred);
+  }
+
+  .navbar a:nth-child(4):hover ~ #indicator {
+    left: 76.1%;
+    background: linear-gradient(130deg, #00e2ff, #89ff00);
+  }
+}

@@ -1,0 +1,27 @@
+.hello-world {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  h1 {
+    text-align: center;
+    color: #FFFFFF;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 32px;
+    line-height: 150%;
+    font-family: "RooneyPro-Medium";
+    letter-spacing: -0.5px;
+    margin-bottom: 0;
+
+    .colorful-name {
+      font-size: 40px;
+      font-family: "RooneyPro-Bold";
+      background: linear-gradient(271deg ,#a0e9ff 30%,#a162e8 50%,#f093b0 70%,#edca85 94%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

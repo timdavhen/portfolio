@@ -1,0 +1,141 @@
+.about-me-container {
+  color: #FFFFFF;
+  width: 90%;
+  margin: 0 auto;
+
+  .web-developer-card {
+    padding-bottom: 10rem;
+  }
+
+  .visual-storyteller-card {
+    padding-bottom: 5rem;
+  }
+
+  .web-developer-card, .visual-storyteller-card {
+    display: flex;
+    justify-content: space-around;
+
+    .web-delevoper-image img, .visual-storyteller-image img {
+      width: 500px;
+      height: 500px;
+      border-radius: 20px;
+    }
+
+    .web-developer-text {
+      height: 500px;
+      width: 500px;
+      position: relative;
+      top: -25px;
+
+      h1 {
+        font-family: "RooneyPro-Medium";
+        line-height: 150%;
+        font-size: 35px;
+        letter-spacing: -0.5px;
+        margin-bottom: 0;
+      }
+
+      p {
+        font-family: "NimbusSans-Light";
+        font-size: 18px;
+        opacity: 0.9;
+        letter-spacing: 0.8px;
+        margin-bottom: 0;
+        line-height: 32px;
+      }
+    }
+
+    .visual-storyteller-text {
+      width: 500px;
+      height: 500px;
+      position: relative;
+      top: -10px;
+
+      h1 {
+        font-family: "RooneyPro-Medium";
+        line-height: 150%;
+        font-size: 35px;
+        letter-spacing: -0.5px;
+        margin-bottom: 0;
+      }
+
+      p {
+        font-family: "NimbusSans-Light";
+        letter-spacing: 0.8px;
+        font-size: 18px;
+        opacity: 0.9;
+        margin-bottom: 0;
+        line-height: 32px;
+      }
+    }
+  }
+
+  .random-facts-container {
+
+    .random-facts-header h1 {
+      text-align: center;
+      font-family: "RooneyPro-Medium";
+      font-size: 35px;
+      letter-spacing: -0.5px;
+      margin-bottom: 0;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+
+    .factsCarousel {
+      margin: 0 auto;
+      max-width: 1200px;
+      margin-bottom: 10rem;
+
+      .facts {
+        text-align: center;
+        overflow: hidden;
+        height: 65px;
+
+        h2 {
+          background: linear-gradient(271deg ,#a0e9ff 30%,#a162e8 50%,#f093b0 70%,#edca85 94%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-family: "RooneyPro-Bold";
+          letter-spacing: -0.5px;
+          margin-bottom: 0;
+          font-size: 48px;
+          padding-bottom: 3rem;
+
+          ul {
+            padding: 0;
+
+            li {
+              height: 45px;
+              margin-bottom: 45px;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    .flip8 { animation: flip8 20s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+    @keyframes flip8 {
+      0% { margin-top: -720px; }
+      6.25% { margin-top: -630px; }
+      12.5% { margin-top: -630px; }
+      18.75% { margin-top: -540px; }
+      25% { margin-top: -540px; }
+      31.25% { margin-top: -450px; }
+      37.5% { margin-top: -450px; }
+      43.75% { margin-top: -360px; }
+      50% { margin-top: -360px; }
+      56.25% { margin-top: -270px; }
+      62.5% { margin-top: -270px; }
+      68.75% { margin-top: -180px; }
+      75% { margin-top: -180px; }
+      81.75% { margin-top: -90px; }
+      88% { margin-top: -90px; }
+      94.25% { margin-top: 0px; }
+      99.99% { margin-top: 0px; }
+      100% { margin-top: -630px; }
+    }
+  }
+}
