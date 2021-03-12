@@ -170,7 +170,7 @@ button.fancy {
   padding: 2rem 0 10rem 0; }
   .navbar-container #indicator {
     position: absolute;
-    left: 0%;
+    left: 0.5%;
     bottom: -4px;
     width: 30px;
     height: 3px;
@@ -182,15 +182,15 @@ button.fancy {
     color: #FFFFFF;
     font-family: "Aqua";
     font-size: 18px; }
-  .navbar-container .social-link .linkedin img {
-    width: 35px;
-    height: 35px;
-    position: relative;
-    top: -2px; }
   .navbar-container .navbar {
     position: relative;
     right: 52px;
     padding: 0; }
+    .navbar-container .navbar .linkedin img {
+      width: 35px;
+      height: 35px;
+      position: relative;
+      top: -2px; }
   .navbar-container .navbar a {
     font-family: "Aqua";
     position: relative;
@@ -205,13 +205,13 @@ button.fancy {
   .navbar-container .navbar a:nth-child(1):hover ~ #indicator {
     background: #FFFFFF; }
   .navbar-container .navbar a:nth-child(2):hover ~ #indicator {
-    left: 25.2%;
+    left: 21.8%;
     background: linear-gradient(130deg, yellow, red); }
   .navbar-container .navbar a:nth-child(3):hover ~ #indicator {
-    left: 53.5%;
+    left: 45.8%;
     background: linear-gradient(130deg, purple, palevioletred); }
   .navbar-container .navbar a:nth-child(4):hover ~ #indicator {
-    left: 76.1%;
+    left: 65.2%;
     background: linear-gradient(130deg, #00e2ff, #89ff00); }
 
 .hello-world {
