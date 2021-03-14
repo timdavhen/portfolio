@@ -27,7 +27,7 @@ button.fancy {
     content: " ";
     width: 1.5625rem;
     height: 3px;
-    background: #edca85;
+    background: #a162e8;
     top: 50%;
     left: 1.5em;
     position: absolute;
@@ -61,7 +61,7 @@ button.fancy {
     right: 1.875rem;
     bottom: -2px;
     position: absolute;
-    background: #a162e8;
+    background: #edca85;
     -webkit-transition: width 0.5s ease-out, right 0.3s ease-out;
     transition: width 0.5s ease-out, right 0.3s ease-out; }
   button.fancy .bottom-line-2 {
@@ -248,13 +248,17 @@ button.fancy {
     background: linear-gradient(130deg, #00e2ff, #89ff00); }
 
 .project-container {
-  min-height: 65vh; }
+  min-height: 66.5vh;
+  margin: 0 auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
 
 .project-card-info {
   position: relative;
   margin: 0 auto;
-  max-width: 500px;
-  min-width: 313px;
+  max-width: 550px;
+  min-width: 344px;
   width: 100%;
   color: #ffffff;
   text-align: center;
@@ -577,8 +581,7 @@ body {
   text-align: center;
   font-family: "RooneyPro-Medium";
   color: #ffffff;
-  padding-bottom: 1rem; }
-  .footer .colorful-footer {
-    background: linear-gradient(271deg, #a0e9ff 30%, #a162e8 50%, #f093b0 70%, #edca85 94%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+  font-size: 14px;
+  margin-bottom: 0.5rem; }
+  .footer p {
+    margin-bottom: 0; }

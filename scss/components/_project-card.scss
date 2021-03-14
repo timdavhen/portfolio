@@ -1,11 +1,16 @@
 .project-container {
- min-height: 65vh;
+  min-height: 66.5vh;
+  margin: 0 auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
+
 .project-card-info {
   position: relative;
   margin: 0 auto;
-  max-width: 500px;
-  min-width: 313px;
+  max-width: 550px;
+  min-width: 344px;
   width: 100%;
   color: #ffffff;
   text-align: center;
