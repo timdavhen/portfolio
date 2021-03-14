@@ -53,3 +53,16 @@ body {
     90% { transform: translate(10%,5%) }
     100% { transform: translate(5%,0) }
 }
+
+.footer {
+  text-align: center;
+  font-family: "RooneyPro-Medium";
+  color: #ffffff;
+  padding-bottom: 1rem;
+
+  .colorful-footer {
+    background: linear-gradient(271deg ,#a0e9ff 30%,#a162e8 50%,#f093b0 70%,#edca85 94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

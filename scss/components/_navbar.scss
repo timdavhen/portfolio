@@ -25,14 +25,36 @@
 
   .navbar {
     position: relative;
-    right: 52px;
+    right: 30px;
     padding: 0;
+  }
 
-    .linkedin img {
+  .social-links {
+
+    .linkedin {
+      padding-right: 10px;
+    }
+
+    .linkedin img, .github img {
+      padding-right: 0;
+      border-radius: 50%;
+      transition: all 0.5s ease;
       width: 35px;
       height: 35px;
       position: relative;
       top: -2px;
+    }
+
+    .linkedin:hover img {
+      color: #0c65c2;
+      box-shadow: 0 0 20px #0c65c2;
+      transition: all 0.5s ease;
+    }
+
+    .github:hover img {
+      color: #FFFFFF;
+      box-shadow: 0 0 20px #FFFFFF;
+      transition: all 0.5s ease;
     }
   }
 
@@ -56,17 +78,17 @@
   }
 
   .navbar a:nth-child(2):hover ~ #indicator {
-    left: 21.8%;
+    left: 25.5%;
     background: linear-gradient(130deg, yellow, red);
   }
 
   .navbar a:nth-child(3):hover ~ #indicator {
-    left: 45.8%;
+    left: 53.4%;
     background: linear-gradient(130deg, purple, palevioletred);
   }
 
   .navbar a:nth-child(4):hover ~ #indicator {
-    left: 65.2%;
+    left: 76.4%;
     background: linear-gradient(130deg, #00e2ff, #89ff00);
   }
 }

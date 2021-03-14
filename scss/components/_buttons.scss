@@ -204,3 +204,30 @@ button.fancy {
   transform: translateX(60px);
   background-color: #f4bb09;
 }
+
+// Button Project
+
+.btn-project {
+
+  .visit {
+    width: 100px;
+    font-family: "RooneyPro-Medium";
+    color: #ffffff;
+    text-decoration: none;
+    background: transparent;
+    padding: 7px 0;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    transition: all 0.6s ease 0s;
+    position: relative;
+    top: 50px;
+  }
+
+  .visit:hover {
+    text-decoration: none;
+    color: #121212;
+    background: #ffffff;
+    border-color: #ffffff;
+    transition: all 0.6s ease 0s;
+  }
+}

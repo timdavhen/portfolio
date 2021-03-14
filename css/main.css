@@ -162,6 +162,26 @@ button.fancy {
   transform: translateX(60px);
   background-color: #f4bb09; }
 
+.btn-project .visit {
+  width: 100px;
+  font-family: "RooneyPro-Medium";
+  color: #ffffff;
+  text-decoration: none;
+  background: transparent;
+  padding: 7px 0;
+  border: 2px solid #ffffff;
+  display: inline-block;
+  transition: all 0.6s ease 0s;
+  position: relative;
+  top: 50px; }
+
+.btn-project .visit:hover {
+  text-decoration: none;
+  color: #121212;
+  background: #ffffff;
+  border-color: #ffffff;
+  transition: all 0.6s ease 0s; }
+
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -184,13 +204,26 @@ button.fancy {
     font-size: 18px; }
   .navbar-container .navbar {
     position: relative;
-    right: 52px;
+    right: 30px;
     padding: 0; }
-    .navbar-container .navbar .linkedin img {
-      width: 35px;
-      height: 35px;
-      position: relative;
-      top: -2px; }
+  .navbar-container .social-links .linkedin {
+    padding-right: 10px; }
+  .navbar-container .social-links .linkedin img, .navbar-container .social-links .github img {
+    padding-right: 0;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: -2px; }
+  .navbar-container .social-links .linkedin:hover img {
+    color: #0c65c2;
+    box-shadow: 0 0 20px #0c65c2;
+    transition: all 0.5s ease; }
+  .navbar-container .social-links .github:hover img {
+    color: #FFFFFF;
+    box-shadow: 0 0 20px #FFFFFF;
+    transition: all 0.5s ease; }
   .navbar-container .navbar a {
     font-family: "Aqua";
     position: relative;
@@ -205,14 +238,137 @@ button.fancy {
   .navbar-container .navbar a:nth-child(1):hover ~ #indicator {
     background: #FFFFFF; }
   .navbar-container .navbar a:nth-child(2):hover ~ #indicator {
-    left: 21.8%;
+    left: 25.5%;
     background: linear-gradient(130deg, yellow, red); }
   .navbar-container .navbar a:nth-child(3):hover ~ #indicator {
-    left: 45.8%;
+    left: 53.4%;
     background: linear-gradient(130deg, purple, palevioletred); }
   .navbar-container .navbar a:nth-child(4):hover ~ #indicator {
-    left: 65.2%;
+    left: 76.4%;
     background: linear-gradient(130deg, #00e2ff, #89ff00); }
+
+.project-container {
+  min-height: 65vh; }
+
+.project-card-info {
+  position: relative;
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 313px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  background: transparent; }
+
+.project-card-info * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in; }
+
+.project-card-info img {
+  border-radius: 5px;
+  position: relative;
+  max-width: 100%;
+  vertical-align: top; }
+
+.project-card-info figcaption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  padding: 20px 30px; }
+
+.project-card-info figcaption:before,
+.project-card-info figcaption:after {
+  width: 1px;
+  height: 0; }
+
+.project-card-info figcaption:before {
+  right: 0;
+  top: 0; }
+
+.project-card-info figcaption:after {
+  left: 0;
+  bottom: 0; }
+
+.project-card-info h3 {
+  font-family: "RooneyPro-Medium";
+  font-size: 32px;
+  letter-spacing: -0.5px;
+  text-transform: uppercase; }
+
+.project-card-info h4 {
+  background: linear-gradient(271deg, #a0e9ff 30%, #a162e8 50%, #f093b0 70%, #edca85 94%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "RooneyPro-Medium";
+  letter-spacing: -0.5px;
+  font-size: 20px; }
+
+.project-card-info p {
+  position: relative;
+  top: 15%;
+  font-family: "NimbusSans-Light";
+  letter-spacing: 0.8px; }
+
+.project-card-info:before,
+.project-card-info:after,
+.project-card-info figcaption:before,
+.project-card-info figcaption:after {
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+  z-index: 1;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 0.8; }
+
+.project-card-info:before,
+.project-card-info:after {
+  height: 1px;
+  width: 0%; }
+
+.project-card-info:before {
+  top: 0;
+  left: 0; }
+
+.project-card-info:after {
+  bottom: 0;
+  right: 0; }
+
+.project-card-info:hover img,
+.project-card-info.hover img {
+  opacity: 0; }
+
+.project-card-info:hover figcaption,
+.project-card-info.hover figcaption {
+  opacity: 1; }
+
+.project-card-info:hover figcaption:before,
+.project-card-info.hover figcaption:before,
+.project-card-info:hover figcaption:after,
+.project-card-info.hover figcaption:after {
+  height: 100%; }
+
+.project-card-info:hover:before,
+.project-card-info.hover:before,
+.project-card-info:hover:after,
+.project-card-info.hover:after {
+  width: 100%; }
+
+.project-card-info:hover:before,
+.project-card-info.hover:before,
+.project-card-info:hover:after,
+.project-card-info.hover:after,
+.project-card-info:hover figcaption:before,
+.project-card-info.hover figcaption:before,
+.project-card-info:hover figcaption:after,
+.project-card-info.hover figcaption:after {
+  opacity: 0.6; }
 
 .hello-world {
   height: 100vh;
@@ -242,7 +398,7 @@ button.fancy {
   width: 90%;
   margin: 0 auto; }
   .about-me-container .web-developer-card {
-    padding-bottom: 10rem; }
+    padding-bottom: 5rem; }
   .about-me-container .visual-storyteller-card {
     padding-bottom: 5rem; }
   .about-me-container .web-developer-card, .about-me-container .visual-storyteller-card {
@@ -251,7 +407,7 @@ button.fancy {
     .about-me-container .web-developer-card .web-delevoper-image img, .about-me-container .web-developer-card .visual-storyteller-image img, .about-me-container .visual-storyteller-card .web-delevoper-image img, .about-me-container .visual-storyteller-card .visual-storyteller-image img {
       width: 500px;
       height: 500px;
-      border-radius: 20px; }
+      border-radius: 5px; }
     .about-me-container .web-developer-card .web-developer-text, .about-me-container .visual-storyteller-card .web-developer-text {
       height: 500px;
       width: 500px;
@@ -416,3 +572,13 @@ body {
     transform: translate(10%, 5%); }
   100% {
     transform: translate(5%, 0); } }
+
+.footer {
+  text-align: center;
+  font-family: "RooneyPro-Medium";
+  color: #ffffff;
+  padding-bottom: 1rem; }
+  .footer .colorful-footer {
+    background: linear-gradient(271deg, #a0e9ff 30%, #a162e8 50%, #f093b0 70%, #edca85 94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
