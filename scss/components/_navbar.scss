@@ -16,16 +16,17 @@
     transition: 0.4s ease left;
   }
 
-  .logo-navbar h2 {
-    margin: 0;
-    color: #FFFFFF;
-    font-family: "Aqua";
-    font-size: 18px;
+  .logo-navbar img {
+    position: absolute;
+    top: -13.5px;
+    left: 38px;
+    width: 125px;
+    height: 125px;
   }
 
   .navbar {
     position: relative;
-    right: 30px;
+    right: -47px;
     padding: 0;
   }
 

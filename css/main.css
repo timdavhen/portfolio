@@ -61,7 +61,7 @@ button.fancy {
     right: 1.875rem;
     bottom: -2px;
     position: absolute;
-    background: #edca85;
+    background: #f093b0;
     -webkit-transition: width 0.5s ease-out, right 0.3s ease-out;
     transition: width 0.5s ease-out, right 0.3s ease-out; }
   button.fancy .bottom-line-2 {
@@ -69,8 +69,8 @@ button.fancy {
     width: 0.625rem;
     right: 0.625rem;
     bottom: -2px;
+    background: #edca85;
     position: absolute;
-    background: #f093b0;
     -webkit-transition: width 0.5s ease-out, right 0.3s ease-out;
     transition: width 0.5s ease-out, right 0.3s ease-out; }
   button.fancy:hover {
@@ -197,14 +197,15 @@ button.fancy {
     background-color: #FFFFFF;
     border-radius: 5px;
     transition: 0.4s ease left; }
-  .navbar-container .logo-navbar h2 {
-    margin: 0;
-    color: #FFFFFF;
-    font-family: "Aqua";
-    font-size: 18px; }
+  .navbar-container .logo-navbar img {
+    position: absolute;
+    top: -13.5px;
+    left: 38px;
+    width: 125px;
+    height: 125px; }
   .navbar-container .navbar {
     position: relative;
-    right: 30px;
+    right: -47px;
     padding: 0; }
   .navbar-container .social-links .linkedin {
     padding-right: 10px; }
@@ -550,7 +551,7 @@ body {
   background: transparent url("http://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
   background-repeat: repeat;
   animation: bg-animation .2s infinite;
-  opacity: .6;
+  opacity: .9;
   visibility: visible; }
 
 @keyframes bg-animation {
