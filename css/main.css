@@ -183,48 +183,26 @@ button.fancy {
   transition: all 0.6s ease 0s; }
 
 .navbar-container {
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
   margin: 0 auto;
   max-width: 90%;
   padding: 2rem 0 10rem 0; }
   .navbar-container #indicator {
     position: absolute;
     left: 0.5%;
-    bottom: -4px;
+    bottom: -5px;
     width: 30px;
     height: 3px;
     background-color: #FFFFFF;
     border-radius: 5px;
     transition: 0.4s ease left; }
   .navbar-container .logo-navbar img {
-    position: absolute;
-    top: -13.5px;
-    left: 38px;
     width: 125px;
     height: 125px; }
   .navbar-container .navbar {
-    position: relative;
-    right: -47px;
-    padding: 0; }
-  .navbar-container .social-links .linkedin {
-    padding-right: 10px; }
-  .navbar-container .social-links .linkedin img, .navbar-container .social-links .github img {
-    padding-right: 0;
-    border-radius: 50%;
-    transition: all 0.5s ease;
-    width: 35px;
-    height: 35px;
-    position: relative;
-    top: -2px; }
-  .navbar-container .social-links .linkedin:hover img {
-    color: #0c65c2;
-    box-shadow: 0 0 20px #0c65c2;
-    transition: all 0.5s ease; }
-  .navbar-container .social-links .github:hover img {
-    color: #FFFFFF;
-    box-shadow: 0 0 20px #FFFFFF;
-    transition: all 0.5s ease; }
+    width: 400px;
+    padding: 0;
+    margin: 0 auto; }
   .navbar-container .navbar a {
     font-family: "Aqua";
     position: relative;
@@ -578,11 +556,39 @@ body {
   100% {
     transform: translate(5%, 0); } }
 
-.footer {
-  text-align: center;
-  font-family: "RooneyPro-Medium";
-  color: #ffffff;
-  font-size: 14px;
-  margin-bottom: 0.5rem; }
-  .footer p {
+.footer-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  height: 100px; }
+  .footer-container .footer-text p {
+    text-align: center;
+    font-family: "RooneyPro-Medium";
+    color: #ffffff;
+    font-size: 14px;
     margin-bottom: 0; }
+  .footer-container .footer-text a {
+    background: linear-gradient(271deg, #a0e9ff 30%, #a162e8 50%, #f093b0 70%, #edca85 94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .footer-container .footer-text a:hover {
+    text-decoration: none; }
+  .footer-container .social-links {
+    margin-bottom: 1rem; }
+    .footer-container .social-links .linkedin, .footer-container .social-links .instagram, .footer-container .social-links .linkedin {
+      padding: 0 15px; }
+    .footer-container .social-links .linkedin img, .footer-container .social-links .github img, .footer-container .social-links .instagram img {
+      padding-right: 0;
+      border-radius: 50%;
+      transition: all 0.5s ease;
+      width: 35px;
+      height: 35px;
+      position: relative;
+      top: 0px; }
+    .footer-container .social-links .github:hover img, .footer-container .social-links .instagram:hover img, .footer-container .social-links .linkedin:hover img {
+      color: #FFFFFF;
+      box-shadow: 0 0 20px #FFFFFF;
+      transition: all 0.5s ease; }

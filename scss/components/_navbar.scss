@@ -1,6 +1,5 @@
 .navbar-container {
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
   margin: 0 auto;
   max-width: 90%;
   padding: 2rem 0 10rem 0;
@@ -8,7 +7,7 @@
   #indicator {
     position: absolute;
     left: 0.5%;
-    bottom: -4px;
+    bottom: -5px;
     width: 30px;
     height: 3px;
     background-color: #FFFFFF;
@@ -17,46 +16,14 @@
   }
 
   .logo-navbar img {
-    position: absolute;
-    top: -13.5px;
-    left: 38px;
     width: 125px;
     height: 125px;
   }
 
   .navbar {
-    position: relative;
-    right: -47px;
+    width: 400px;
     padding: 0;
-  }
-
-  .social-links {
-
-    .linkedin {
-      padding-right: 10px;
-    }
-
-    .linkedin img, .github img {
-      padding-right: 0;
-      border-radius: 50%;
-      transition: all 0.5s ease;
-      width: 35px;
-      height: 35px;
-      position: relative;
-      top: -2px;
-    }
-
-    .linkedin:hover img {
-      color: #0c65c2;
-      box-shadow: 0 0 20px #0c65c2;
-      transition: all 0.5s ease;
-    }
-
-    .github:hover img {
-      color: #FFFFFF;
-      box-shadow: 0 0 20px #FFFFFF;
-      transition: all 0.5s ease;
-    }
+    margin: 0 auto;
   }
 
   .navbar a {
