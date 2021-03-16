@@ -187,22 +187,24 @@ button.fancy {
   margin: 0 auto;
   max-width: 90%;
   padding: 2rem 0 10rem 0; }
-  .navbar-container #indicator {
-    position: absolute;
-    left: 0.5%;
-    bottom: -5px;
-    width: 30px;
-    height: 3px;
-    background-color: #FFFFFF;
-    border-radius: 5px;
-    transition: 0.4s ease left; }
   .navbar-container .logo-navbar img {
     width: 125px;
     height: 125px; }
+  .navbar-container .logo-navbar:hover a {
+    text-decoration: none; }
   .navbar-container .navbar {
     width: 400px;
     padding: 0;
     margin: 0 auto; }
+    .navbar-container .navbar #indicator {
+      position: absolute;
+      left: 0.5%;
+      bottom: -5px;
+      width: 30px;
+      height: 3px;
+      background-color: #FFFFFF;
+      border-radius: 5px;
+      transition: 0.4s ease left; }
   .navbar-container .navbar a {
     font-family: "Aqua";
     position: relative;
@@ -519,6 +521,7 @@ body {
   src: url("../fonts/RooneyPro-Bold.ttf") format("truetype"); }
 
 .noise-background {
+  z-index: -1;
   position: fixed;
   top: -50%;
   left: -50%;
