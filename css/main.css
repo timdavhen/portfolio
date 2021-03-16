@@ -171,9 +171,7 @@ button.fancy {
   padding: 7px 0;
   border: 2px solid #ffffff;
   display: inline-block;
-  transition: all 0.6s ease 0s;
-  position: relative;
-  top: 50px; }
+  transition: all 0.6s ease 0s; }
 
 .btn-project .visit:hover {
   text-decoration: none;
@@ -226,8 +224,7 @@ button.fancy {
     background: linear-gradient(130deg, #00e2ff, #89ff00); }
 
 .project-container {
-  min-height: 66.5vh;
-  margin: 0 auto;
+  margin: 0 auto 10rem auto;
   width: 90%;
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
@@ -253,6 +250,11 @@ button.fancy {
   position: relative;
   max-width: 100%;
   vertical-align: top; }
+
+figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 .project-card-info figcaption {
   position: absolute;
@@ -292,8 +294,6 @@ button.fancy {
   font-size: 20px; }
 
 .project-card-info p {
-  position: relative;
-  top: 15%;
   font-family: "NimbusSans-Light";
   letter-spacing: 0.8px; }
 
@@ -432,8 +432,7 @@ button.fancy {
     font-size: 35px;
     letter-spacing: -0.5px;
     margin-bottom: 0;
-    padding-top: 5rem;
-    padding-bottom: 5rem; }
+    padding: 5rem 0; }
   .about-me-container .random-facts-container .factsCarousel {
     margin: 0 auto;
     max-width: 1200px;
@@ -501,6 +500,13 @@ button.fancy {
 body {
   background-color: #121212; }
 
+#page-container {
+  position: relative;
+  min-height: 100vh; }
+
+.content-wrap {
+  padding-bottom: 100px; }
+
 @font-face {
   font-family: 'Aqua';
   src: url("../fonts/Aqua.ttf") format("truetype"); }
@@ -557,12 +563,13 @@ body {
     transform: translate(5%, 0); } }
 
 .footer-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  bottom: 0;
   height: 100px; }
   .footer-container .footer-text p {
     text-align: center;
@@ -592,3 +599,133 @@ body {
       color: #FFFFFF;
       box-shadow: 0 0 20px #FFFFFF;
       transition: all 0.5s ease; }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .hello-world h1 {
+    font-size: 16px; }
+    .hello-world h1 .colorful-name {
+      font-size: 20px; }
+  button.fancy {
+    width: 12rem;
+    padding: 0.75em 1.5em; }
+    button.fancy::before {
+      width: 1rem; }
+    button.fancy a {
+      font-size: 14px; }
+    button.fancy .top-line {
+      width: 1.75rem; }
+    button.fancy .bottom-line-1 {
+      width: 1.75rem; }
+    button.fancy .bottom-line-2 {
+      width: 0.5rem; }
+  .navbar-container {
+    padding: 1rem 0 3rem 0;
+    width: 300px; }
+    .navbar-container .logo-navbar img {
+      width: 75px;
+      height: 75px; }
+    .navbar-container .navbar a:nth-child(2):hover ~ #indicator {
+      left: 24%; }
+    .navbar-container .navbar a:nth-child(3):hover ~ #indicator {
+      left: 53.4%; }
+    .navbar-container .navbar a:nth-child(4):hover ~ #indicator {
+      left: 75.5%; }
+    .navbar-container .navbar {
+      width: 275px !important; }
+      .navbar-container .navbar #indicator {
+        width: 23px;
+        left: 2.8%; }
+      .navbar-container .navbar a {
+        font-size: 14px !important;
+        padding: 0 7px !important; }
+  .btn-project .visit {
+    font-size: 14px;
+    margin-bottom: 0;
+    width: 75px !important;
+    padding: 5px 0 !important; }
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0rem !important;
+    width: 300px; }
+    .project-container .project-card {
+      padding-bottom: 3rem;
+      width: 300px; }
+      .project-container .project-card .project-card-info {
+        max-width: 300px;
+        min-width: 172px; }
+        .project-container .project-card .project-card-info figcaption {
+          padding: 8px 13px; }
+        .project-container .project-card .project-card-info h3 {
+          font-size: 18px !important; }
+        .project-container .project-card .project-card-info h4 {
+          font-size: 16px !important; }
+        .project-container .project-card .project-card-info p {
+          margin-bottom: 8px;
+          font-size: 14px !important;
+          letter-spacing: 0.5px; }
+  .about-me-container {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    width: 300px; }
+    .about-me-container .button {
+      padding-bottom: 2rem;
+      width: 300px !important; }
+      .about-me-container .button .button__text {
+        font-size: 18px; }
+    .about-me-container .visual-storyteller-card, .about-me-container .web-developer-card {
+      padding-bottom: 2rem; }
+    .about-me-container .web-developer-card, .about-me-container .visual-storyteller-card {
+      flex-direction: column !important;
+      justify-content: center !important; }
+      .about-me-container .web-developer-card .web-delevoper-image img, .about-me-container .web-developer-card .visual-storyteller-image img, .about-me-container .visual-storyteller-card .web-delevoper-image img, .about-me-container .visual-storyteller-card .visual-storyteller-image img {
+        width: 300px !important;
+        height: 300px !important; }
+      .about-me-container .web-developer-card .web-developer-text, .about-me-container .visual-storyteller-card .web-developer-text {
+        width: 300px;
+        height: auto;
+        position: static !important; }
+        .about-me-container .web-developer-card .web-developer-text h1, .about-me-container .visual-storyteller-card .web-developer-text h1 {
+          margin-top: 2rem;
+          line-height: 125%;
+          font-size: 22px; }
+        .about-me-container .web-developer-card .web-developer-text p, .about-me-container .visual-storyteller-card .web-developer-text p {
+          font-size: 16px;
+          line-height: 22px; }
+      .about-me-container .web-developer-card .visual-storyteller-text, .about-me-container .visual-storyteller-card .visual-storyteller-text {
+        width: 300px;
+        height: auto;
+        position: static !important;
+        padding-bottom: 2rem; }
+        .about-me-container .web-developer-card .visual-storyteller-text h1, .about-me-container .visual-storyteller-card .visual-storyteller-text h1 {
+          font-size: 22px;
+          line-height: 125%; }
+        .about-me-container .web-developer-card .visual-storyteller-text p, .about-me-container .visual-storyteller-card .visual-storyteller-text p {
+          font-size: 16px;
+          line-height: 22px; }
+    .about-me-container .random-facts-container {
+      width: 300px !important;
+      height: 200px; }
+      .about-me-container .random-facts-container .random-facts-header h1 {
+        margin: 0 auto;
+        padding: 2rem 0;
+        width: 300px !important;
+        font-size: 22px !important; }
+      .about-me-container .random-facts-container .factsCarousel {
+        width: 300px !important; }
+        .about-me-container .random-facts-container .factsCarousel .facts {
+          height: 60px; }
+          .about-me-container .random-facts-container .factsCarousel .facts h2 {
+            font-size: 24px !important; }
+  .footer-container {
+    justify-content: flex-end; }
+    .footer-container .footer-text p {
+      font-size: 12px !important;
+      margin-bottom: 8px; }
+    .footer-container .social-links {
+      margin-bottom: 8px !important; }
+      .footer-container .social-links .linkedin img, .footer-container .social-links .github img, .footer-container .social-links .instagram img {
+        height: 25px !important;
+        width: 25px !important; } }

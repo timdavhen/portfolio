@@ -1,6 +1,5 @@
 .project-container {
-  min-height: 66.5vh;
-  margin: 0 auto;
+  margin: 0 auto 10rem auto;
   width: 90%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -29,6 +28,12 @@
   position: relative;
   max-width: 100%;
   vertical-align: top;
+}
+
+figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .project-card-info figcaption {
@@ -75,8 +80,6 @@
 }
 
 .project-card-info p {
-  position: relative;
-  top: 15%;
   font-family: "NimbusSans-Light";
   letter-spacing: 0.8px;
 }
