@@ -117,18 +117,22 @@ button.fancy {
   padding: 0;
 }
 
+.resume-btn a, .visual-storyteller-btn a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.resume-btn, .visual-storyteller-btn {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 5rem;
+}
+
 .button {
   display: flex;
   justify-content: left;
   cursor: pointer;
   align-items: center;
-  padding-bottom: 5rem;
-  width: 20%;
-
-  a {
-    text-decoration: none;
-    color: #FFFFFF;
-  }
 
   &:hover {
     & .button__border-circle {

@@ -92,16 +92,20 @@ button.fancy {
   margin: 0;
   padding: 0; }
 
+.resume-btn a, .visual-storyteller-btn a {
+  text-decoration: none;
+  color: #FFFFFF; }
+
+.resume-btn, .visual-storyteller-btn {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 5rem; }
+
 .button {
   display: flex;
   justify-content: left;
   cursor: pointer;
-  align-items: center;
-  padding-bottom: 5rem;
-  width: 20%; }
-  .button a {
-    text-decoration: none;
-    color: #FFFFFF; }
+  align-items: center; }
   .button:hover .button__border-circle {
     transform: translateX(60px); }
   .button:hover .button__mask-circle {
@@ -428,8 +432,7 @@ figcaption {
     justify-content: center !important;
     width: 300px !important; }
     .about-me-container .button {
-      padding-bottom: 2rem;
-      width: 300px !important; }
+      margin-bottom: 2rem; }
       .about-me-container .button .button__text {
         font-size: 18px; }
     .about-me-container .visual-storyteller-card, .about-me-container .web-developer-card {
@@ -550,8 +553,7 @@ figcaption {
     justify-content: center !important;
     width: 500px !important; }
     .about-me-container .button {
-      padding-bottom: 2rem;
-      width: 500px !important; }
+      margin-bottom: 2rem; }
     .about-me-container .visual-storyteller-card, .about-me-container .web-developer-card {
       padding-bottom: 2rem !important; }
     .about-me-container .web-developer-card, .about-me-container .visual-storyteller-card {
@@ -632,8 +634,7 @@ figcaption {
     justify-content: center !important;
     width: 700px !important; }
     .about-me-container .button {
-      padding-bottom: 2rem;
-      width: 700px !important; }
+      margin-bottom: 2rem; }
     .about-me-container .visual-storyteller-card, .about-me-container .web-developer-card {
       padding-bottom: 2rem !important; }
     .about-me-container .web-developer-card, .about-me-container .visual-storyteller-card {
