@@ -98,7 +98,7 @@ button.fancy {
   cursor: pointer;
   align-items: center;
   padding-bottom: 5rem;
-  width: 15%; }
+  width: 20%; }
   .button a {
     text-decoration: none;
     color: #FFFFFF; }
@@ -356,9 +356,9 @@ figcaption {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .hello-world h1 {
-    font-size: 16px; }
+    font-size: 16px !important; }
     .hello-world h1 .colorful-name {
-      font-size: 20px; }
+      font-size: 20px !important; }
   button.fancy {
     width: 12rem;
     padding: 0.75em 1.5em; }
@@ -808,7 +808,7 @@ figcaption {
   99.99% {
     margin-top: 0px; }
   100% {
-    margin-top: 720px; } }
+    margin-top: -720px; } }
 
 body {
   background-color: #121212; }
