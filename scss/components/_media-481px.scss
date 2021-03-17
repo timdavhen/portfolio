@@ -1,0 +1,195 @@
+@media (min-width: 481px) and (max-width: 767px) {
+
+.hello-world {
+
+    h1 {
+      font-size: 24px !important;
+
+      .colorful-name {
+        font-size: 32px !important;
+      }
+    }
+  }
+
+  button.fancy {
+    width: 14rem;
+    padding: 1em 1.75em;
+
+    &::before {
+      width: 1.25rem;
+    }
+
+    a {
+      font-size: 18px;
+    }
+
+    .top-line {
+      width: 2.25rem;
+    }
+
+    .bottom-line-1 {
+      width: 2.25rem;
+    }
+  }
+
+  .navbar-container {
+    width: 450px !important;
+    padding: 1rem 0 3rem 0;
+
+    .logo-navbar img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .navbar a:nth-child(2):hover ~ #indicator {
+      left: 27.3%;
+    }
+
+    .navbar a:nth-child(3):hover ~ #indicator {
+      left: 56.4%;
+    }
+
+    .navbar a:nth-child(4):hover ~ #indicator {
+      left: 81.3%;
+    }
+
+    .navbar {
+      width: 450px !important;
+
+      #indicator {
+        width: 26px;
+        left: 3.4%;
+      }
+
+      a {
+        font-size: 16px !important;
+      }
+    }
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0rem !important;
+    width: 500px;
+
+    .project-card {
+      padding-bottom: 3rem;
+      width: 500px;
+
+      .project-card-info {
+        max-width: 500px !important;
+        max-height: 312px !important;
+
+        figcaption {
+          width: 500px;
+          padding: 8px 13px;
+        }
+
+        h3 {
+          font-size: 26px !important;
+        }
+
+        h4 {
+          font-size: 22px !important;
+        }
+
+        p {
+          margin-bottom: 8px;
+          font-size: 18px !important;
+        }
+      }
+    }
+  }
+
+  .about-me-container {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    width: 500px !important;
+
+    .button {
+      padding-bottom: 2rem;
+      width: 500px !important;
+    }
+
+    .visual-storyteller-card, .web-developer-card {
+      padding-bottom: 2rem !important;
+    }
+
+    .web-developer-card, .visual-storyteller-card {
+      flex-direction: column !important;
+      justify-content: center !important;
+
+      .web-delevoper-image img, .visual-storyteller-image img {
+        width: 500px !important;
+        height: 500px !important;
+      }
+
+      .web-developer-text {
+        width: 500px !important;
+        height: auto !important;
+        position: static !important;
+
+        h1 {
+          margin-top: 2rem;
+          line-height: 125%;
+          font-size: 28px !important;
+        }
+      }
+
+      .visual-storyteller-text {
+        width: 500px !important;
+        height: auto !important;
+        position: static !important;
+        padding-bottom: 2rem !important;
+
+        h1 {
+          font-size: 28px !important;
+          line-height: 125%;
+        }
+      }
+    }
+
+    .random-facts-container {
+      width: 500px !important;
+      height: 325px !important;
+
+      .random-facts-header h1 {
+        margin: 0 auto;
+        padding: 2rem 0;
+        width: 500px !important;
+        font-size: 28px !important;
+      }
+
+      .factsCarousel {
+        max-width: 500px !important;
+
+        .facts {
+          height: 80px !important;
+
+          h2 {
+            font-size: 32px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-container {
+
+    .footer-text p {
+      font-size: 14px !important;
+    }
+
+    .social-links {
+      margin-bottom: 8px !important;
+
+      .linkedin img, .github img, .instagram img {
+        height: 30px !important;
+        width: 30px !important;
+      }
+    }
+  }
+}

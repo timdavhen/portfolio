@@ -233,8 +233,7 @@ button.fancy {
   position: relative;
   margin: 0 auto;
   max-width: 550px;
-  min-width: 344px;
-  width: 100%;
+  min-height: 344px;
   color: #ffffff;
   text-align: center;
   background: transparent; }
@@ -248,7 +247,7 @@ button.fancy {
 .project-card-info img {
   border-radius: 5px;
   position: relative;
-  max-width: 100%;
+  width: 100%;
   vertical-align: top; }
 
 figcaption {
@@ -351,6 +350,317 @@ figcaption {
 .project-card-info:hover figcaption:after,
 .project-card-info.hover figcaption:after {
   opacity: 0.6; }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .hello-world h1 {
+    font-size: 16px; }
+    .hello-world h1 .colorful-name {
+      font-size: 20px; }
+  button.fancy {
+    width: 12rem;
+    padding: 0.75em 1.5em; }
+    button.fancy::before {
+      width: 1rem; }
+    button.fancy a {
+      font-size: 14px; }
+    button.fancy .top-line {
+      width: 1.75rem; }
+    button.fancy .bottom-line-1 {
+      width: 1.75rem; }
+    button.fancy .bottom-line-2 {
+      width: 0.5rem; }
+  .navbar-container {
+    padding: 1rem 0 3rem 0;
+    width: 275px !important; }
+    .navbar-container .logo-navbar img {
+      width: 75px;
+      height: 75px; }
+    .navbar-container .navbar a:nth-child(2):hover ~ #indicator {
+      left: 24%; }
+    .navbar-container .navbar a:nth-child(3):hover ~ #indicator {
+      left: 53.4%; }
+    .navbar-container .navbar a:nth-child(4):hover ~ #indicator {
+      left: 75.5%; }
+    .navbar-container .navbar {
+      width: 275px !important; }
+      .navbar-container .navbar #indicator {
+        width: 23px;
+        left: 2.8%; }
+      .navbar-container .navbar a {
+        font-size: 14px !important;
+        padding: 0 7px !important; }
+  .btn-project .visit {
+    font-size: 14px;
+    margin-bottom: 0;
+    width: 75px !important;
+    padding: 5px 0 !important; }
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0rem !important;
+    width: 300px !important; }
+    .project-container .project-card {
+      padding-bottom: 3rem;
+      width: 300px !important; }
+      .project-container .project-card img {
+        max-width: 300px !important;
+        max-height: 172px !important; }
+      .project-container .project-card .project-card-info {
+        max-width: 300px !important;
+        min-height: 172px !important; }
+        .project-container .project-card .project-card-info figcaption {
+          padding: 8px 13px; }
+        .project-container .project-card .project-card-info h3 {
+          font-size: 18px !important; }
+        .project-container .project-card .project-card-info h4 {
+          font-size: 16px !important; }
+        .project-container .project-card .project-card-info p {
+          margin-bottom: 8px;
+          font-size: 14px !important;
+          letter-spacing: 0.5px; }
+  .about-me-container {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    width: 300px !important; }
+    .about-me-container .button {
+      padding-bottom: 2rem;
+      width: 300px !important; }
+      .about-me-container .button .button__text {
+        font-size: 18px; }
+    .about-me-container .visual-storyteller-card, .about-me-container .web-developer-card {
+      padding-bottom: 2rem !important; }
+    .about-me-container .web-developer-card, .about-me-container .visual-storyteller-card {
+      flex-direction: column !important;
+      justify-content: center !important; }
+      .about-me-container .web-developer-card .web-delevoper-image img, .about-me-container .web-developer-card .visual-storyteller-image img, .about-me-container .visual-storyteller-card .web-delevoper-image img, .about-me-container .visual-storyteller-card .visual-storyteller-image img {
+        width: 300px !important;
+        height: 300px !important; }
+      .about-me-container .web-developer-card .web-developer-text, .about-me-container .visual-storyteller-card .web-developer-text {
+        width: 300px !important;
+        height: auto !important;
+        position: static !important; }
+        .about-me-container .web-developer-card .web-developer-text h1, .about-me-container .visual-storyteller-card .web-developer-text h1 {
+          margin-top: 2rem;
+          line-height: 125%;
+          font-size: 22px !important; }
+        .about-me-container .web-developer-card .web-developer-text p, .about-me-container .visual-storyteller-card .web-developer-text p {
+          font-size: 16px !important;
+          line-height: 22px; }
+      .about-me-container .web-developer-card .visual-storyteller-text, .about-me-container .visual-storyteller-card .visual-storyteller-text {
+        width: 300px !important;
+        height: auto !important;
+        position: static !important;
+        padding-bottom: 2rem !important; }
+        .about-me-container .web-developer-card .visual-storyteller-text h1, .about-me-container .visual-storyteller-card .visual-storyteller-text h1 {
+          font-size: 22px !important;
+          line-height: 125%; }
+        .about-me-container .web-developer-card .visual-storyteller-text p, .about-me-container .visual-storyteller-card .visual-storyteller-text p {
+          font-size: 16px !important;
+          line-height: 22px; }
+    .about-me-container .random-facts-container {
+      width: 300px !important;
+      height: 275px !important; }
+      .about-me-container .random-facts-container .random-facts-header h1 {
+        margin: 0 auto;
+        padding: 2rem 0;
+        width: 300px !important;
+        font-size: 22px !important; }
+      .about-me-container .random-facts-container .factsCarousel {
+        width: 300px !important; }
+        .about-me-container .random-facts-container .factsCarousel .facts {
+          height: 60px; }
+          .about-me-container .random-facts-container .factsCarousel .facts h2 {
+            font-size: 24px !important; }
+  .footer-container .footer-text p {
+    font-size: 12px !important;
+    margin-bottom: 8px; }
+  .footer-container .social-links {
+    margin-bottom: 8px !important; }
+    .footer-container .social-links .linkedin img, .footer-container .social-links .github img, .footer-container .social-links .instagram img {
+      height: 25px !important;
+      width: 25px !important; } }
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .hello-world h1 {
+    font-size: 24px !important; }
+    .hello-world h1 .colorful-name {
+      font-size: 32px !important; }
+  button.fancy {
+    width: 14rem;
+    padding: 1em 1.75em; }
+    button.fancy::before {
+      width: 1.25rem; }
+    button.fancy a {
+      font-size: 18px; }
+    button.fancy .top-line {
+      width: 2.25rem; }
+    button.fancy .bottom-line-1 {
+      width: 2.25rem; }
+  .navbar-container {
+    width: 450px !important;
+    padding: 1rem 0 3rem 0; }
+    .navbar-container .logo-navbar img {
+      width: 100px;
+      height: 100px; }
+    .navbar-container .navbar a:nth-child(2):hover ~ #indicator {
+      left: 27.3%; }
+    .navbar-container .navbar a:nth-child(3):hover ~ #indicator {
+      left: 56.4%; }
+    .navbar-container .navbar a:nth-child(4):hover ~ #indicator {
+      left: 81.3%; }
+    .navbar-container .navbar {
+      width: 450px !important; }
+      .navbar-container .navbar #indicator {
+        width: 26px;
+        left: 3.4%; }
+      .navbar-container .navbar a {
+        font-size: 16px !important; }
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0rem !important;
+    width: 500px; }
+    .project-container .project-card {
+      padding-bottom: 3rem;
+      width: 500px; }
+      .project-container .project-card .project-card-info {
+        max-width: 500px !important;
+        max-height: 312px !important; }
+        .project-container .project-card .project-card-info figcaption {
+          width: 500px;
+          padding: 8px 13px; }
+        .project-container .project-card .project-card-info h3 {
+          font-size: 26px !important; }
+        .project-container .project-card .project-card-info h4 {
+          font-size: 22px !important; }
+        .project-container .project-card .project-card-info p {
+          margin-bottom: 8px;
+          font-size: 18px !important; }
+  .about-me-container {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    width: 500px !important; }
+    .about-me-container .button {
+      padding-bottom: 2rem;
+      width: 500px !important; }
+    .about-me-container .visual-storyteller-card, .about-me-container .web-developer-card {
+      padding-bottom: 2rem !important; }
+    .about-me-container .web-developer-card, .about-me-container .visual-storyteller-card {
+      flex-direction: column !important;
+      justify-content: center !important; }
+      .about-me-container .web-developer-card .web-delevoper-image img, .about-me-container .web-developer-card .visual-storyteller-image img, .about-me-container .visual-storyteller-card .web-delevoper-image img, .about-me-container .visual-storyteller-card .visual-storyteller-image img {
+        width: 500px !important;
+        height: 500px !important; }
+      .about-me-container .web-developer-card .web-developer-text, .about-me-container .visual-storyteller-card .web-developer-text {
+        width: 500px !important;
+        height: auto !important;
+        position: static !important; }
+        .about-me-container .web-developer-card .web-developer-text h1, .about-me-container .visual-storyteller-card .web-developer-text h1 {
+          margin-top: 2rem;
+          line-height: 125%;
+          font-size: 28px !important; }
+      .about-me-container .web-developer-card .visual-storyteller-text, .about-me-container .visual-storyteller-card .visual-storyteller-text {
+        width: 500px !important;
+        height: auto !important;
+        position: static !important;
+        padding-bottom: 2rem !important; }
+        .about-me-container .web-developer-card .visual-storyteller-text h1, .about-me-container .visual-storyteller-card .visual-storyteller-text h1 {
+          font-size: 28px !important;
+          line-height: 125%; }
+    .about-me-container .random-facts-container {
+      width: 500px !important;
+      height: 325px !important; }
+      .about-me-container .random-facts-container .random-facts-header h1 {
+        margin: 0 auto;
+        padding: 2rem 0;
+        width: 500px !important;
+        font-size: 28px !important; }
+      .about-me-container .random-facts-container .factsCarousel {
+        max-width: 500px !important; }
+        .about-me-container .random-facts-container .factsCarousel .facts {
+          height: 80px !important; }
+          .about-me-container .random-facts-container .factsCarousel .facts h2 {
+            font-size: 32px !important; }
+  .footer-container .footer-text p {
+    font-size: 14px !important; }
+  .footer-container .social-links {
+    margin-bottom: 8px !important; }
+    .footer-container .social-links .linkedin img, .footer-container .social-links .github img, .footer-container .social-links .instagram img {
+      height: 30px !important;
+      width: 30px !important; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar-container {
+    width: 700px !important;
+    padding: 1rem 0 5rem 0; }
+    .navbar-container .navbar {
+      width: 600px !important; }
+      .navbar-container .navbar #indicator {
+        left: 2.5%; }
+    .navbar-container .navbar a:nth-child(2):hover ~ #indicator {
+      left: 28.3%; }
+    .navbar-container .navbar a:nth-child(3):hover ~ #indicator {
+      left: 58.2%; }
+    .navbar-container .navbar a:nth-child(4):hover ~ #indicator {
+      left: 84.5%; }
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 700px !important;
+    margin-bottom: 0rem !important; }
+    .project-container .project-card {
+      padding-bottom: 5rem;
+      width: 700px !important; }
+      .project-container .project-card .project-card-info {
+        max-width: 700px !important;
+        max-height: 437px !important; }
+        .project-container .project-card .project-card-info figcaption {
+          width: 700px !important; }
+  .about-me-container {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    width: 700px !important; }
+    .about-me-container .button {
+      padding-bottom: 2rem;
+      width: 700px !important; }
+    .about-me-container .visual-storyteller-card, .about-me-container .web-developer-card {
+      padding-bottom: 2rem !important; }
+    .about-me-container .web-developer-card, .about-me-container .visual-storyteller-card {
+      flex-direction: column !important;
+      justify-content: center !important; }
+      .about-me-container .web-developer-card .web-delevoper-image img, .about-me-container .web-developer-card .visual-storyteller-image img, .about-me-container .visual-storyteller-card .web-delevoper-image img, .about-me-container .visual-storyteller-card .visual-storyteller-image img {
+        width: 700px !important;
+        height: 700px !important; }
+      .about-me-container .web-developer-card .web-developer-text, .about-me-container .visual-storyteller-card .web-developer-text {
+        width: 700px !important;
+        height: auto !important;
+        position: static !important; }
+        .about-me-container .web-developer-card .web-developer-text h1, .about-me-container .visual-storyteller-card .web-developer-text h1 {
+          margin-top: 2rem; }
+      .about-me-container .web-developer-card .visual-storyteller-text, .about-me-container .visual-storyteller-card .visual-storyteller-text {
+        width: 700px !important;
+        height: auto !important;
+        position: static !important;
+        padding-bottom: 2rem !important; }
+    .about-me-container .random-facts-container {
+      width: 700px !important;
+      height: 400px !important; }
+      .about-me-container .random-facts-container .random-facts-header h1 {
+        margin: 0 auto;
+        padding: 2rem 0;
+        width: 700px !important; }
+      .about-me-container .random-facts-container .factsCarousel {
+        max-width: 700px !important; }
+        .about-me-container .random-facts-container .factsCarousel .facts {
+          height: 93px !important; }
+          .about-me-container .random-facts-container .factsCarousel .facts h2 {
+            font-size: 40px !important; } }
 
 .hello-world {
   height: 100vh;
@@ -495,7 +805,7 @@ figcaption {
   99.99% {
     margin-top: 0px; }
   100% {
-    margin-top: -630px; } }
+    margin-top: 720px; } }
 
 body {
   background-color: #121212; }
@@ -567,10 +877,11 @@ body {
   bottom: 0;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
   align-items: center;
-  height: 100px; }
+  height: 100px;
+  margin-bottom: 0.5rem; }
   .footer-container .footer-text p {
     text-align: center;
     font-family: "RooneyPro-Medium";
@@ -599,133 +910,3 @@ body {
       color: #FFFFFF;
       box-shadow: 0 0 20px #FFFFFF;
       transition: all 0.5s ease; }
-
-@media (min-width: 320px) and (max-width: 480px) {
-  .hello-world h1 {
-    font-size: 16px; }
-    .hello-world h1 .colorful-name {
-      font-size: 20px; }
-  button.fancy {
-    width: 12rem;
-    padding: 0.75em 1.5em; }
-    button.fancy::before {
-      width: 1rem; }
-    button.fancy a {
-      font-size: 14px; }
-    button.fancy .top-line {
-      width: 1.75rem; }
-    button.fancy .bottom-line-1 {
-      width: 1.75rem; }
-    button.fancy .bottom-line-2 {
-      width: 0.5rem; }
-  .navbar-container {
-    padding: 1rem 0 3rem 0;
-    width: 300px; }
-    .navbar-container .logo-navbar img {
-      width: 75px;
-      height: 75px; }
-    .navbar-container .navbar a:nth-child(2):hover ~ #indicator {
-      left: 24%; }
-    .navbar-container .navbar a:nth-child(3):hover ~ #indicator {
-      left: 53.4%; }
-    .navbar-container .navbar a:nth-child(4):hover ~ #indicator {
-      left: 75.5%; }
-    .navbar-container .navbar {
-      width: 275px !important; }
-      .navbar-container .navbar #indicator {
-        width: 23px;
-        left: 2.8%; }
-      .navbar-container .navbar a {
-        font-size: 14px !important;
-        padding: 0 7px !important; }
-  .btn-project .visit {
-    font-size: 14px;
-    margin-bottom: 0;
-    width: 75px !important;
-    padding: 5px 0 !important; }
-  .project-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 0rem !important;
-    width: 300px; }
-    .project-container .project-card {
-      padding-bottom: 3rem;
-      width: 300px; }
-      .project-container .project-card .project-card-info {
-        max-width: 300px;
-        min-width: 172px; }
-        .project-container .project-card .project-card-info figcaption {
-          padding: 8px 13px; }
-        .project-container .project-card .project-card-info h3 {
-          font-size: 18px !important; }
-        .project-container .project-card .project-card-info h4 {
-          font-size: 16px !important; }
-        .project-container .project-card .project-card-info p {
-          margin-bottom: 8px;
-          font-size: 14px !important;
-          letter-spacing: 0.5px; }
-  .about-me-container {
-    display: flex;
-    flex-direction: column !important;
-    justify-content: center !important;
-    width: 300px; }
-    .about-me-container .button {
-      padding-bottom: 2rem;
-      width: 300px !important; }
-      .about-me-container .button .button__text {
-        font-size: 18px; }
-    .about-me-container .visual-storyteller-card, .about-me-container .web-developer-card {
-      padding-bottom: 2rem; }
-    .about-me-container .web-developer-card, .about-me-container .visual-storyteller-card {
-      flex-direction: column !important;
-      justify-content: center !important; }
-      .about-me-container .web-developer-card .web-delevoper-image img, .about-me-container .web-developer-card .visual-storyteller-image img, .about-me-container .visual-storyteller-card .web-delevoper-image img, .about-me-container .visual-storyteller-card .visual-storyteller-image img {
-        width: 300px !important;
-        height: 300px !important; }
-      .about-me-container .web-developer-card .web-developer-text, .about-me-container .visual-storyteller-card .web-developer-text {
-        width: 300px;
-        height: auto;
-        position: static !important; }
-        .about-me-container .web-developer-card .web-developer-text h1, .about-me-container .visual-storyteller-card .web-developer-text h1 {
-          margin-top: 2rem;
-          line-height: 125%;
-          font-size: 22px; }
-        .about-me-container .web-developer-card .web-developer-text p, .about-me-container .visual-storyteller-card .web-developer-text p {
-          font-size: 16px;
-          line-height: 22px; }
-      .about-me-container .web-developer-card .visual-storyteller-text, .about-me-container .visual-storyteller-card .visual-storyteller-text {
-        width: 300px;
-        height: auto;
-        position: static !important;
-        padding-bottom: 2rem; }
-        .about-me-container .web-developer-card .visual-storyteller-text h1, .about-me-container .visual-storyteller-card .visual-storyteller-text h1 {
-          font-size: 22px;
-          line-height: 125%; }
-        .about-me-container .web-developer-card .visual-storyteller-text p, .about-me-container .visual-storyteller-card .visual-storyteller-text p {
-          font-size: 16px;
-          line-height: 22px; }
-    .about-me-container .random-facts-container {
-      width: 300px !important;
-      height: 200px; }
-      .about-me-container .random-facts-container .random-facts-header h1 {
-        margin: 0 auto;
-        padding: 2rem 0;
-        width: 300px !important;
-        font-size: 22px !important; }
-      .about-me-container .random-facts-container .factsCarousel {
-        width: 300px !important; }
-        .about-me-container .random-facts-container .factsCarousel .facts {
-          height: 60px; }
-          .about-me-container .random-facts-container .factsCarousel .facts h2 {
-            font-size: 24px !important; }
-  .footer-container {
-    justify-content: flex-end; }
-    .footer-container .footer-text p {
-      font-size: 12px !important;
-      margin-bottom: 8px; }
-    .footer-container .social-links {
-      margin-bottom: 8px !important; }
-      .footer-container .social-links .linkedin img, .footer-container .social-links .github img, .footer-container .social-links .instagram img {
-        height: 25px !important;
-        width: 25px !important; } }

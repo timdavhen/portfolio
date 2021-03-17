@@ -1,0 +1,115 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .navbar-container {
+    width: 700px !important;
+    padding: 1rem 0 5rem 0;
+
+    .navbar {
+      width: 600px !important;
+
+      #indicator {
+        left: 2.5%;
+      }
+    }
+
+    .navbar a:nth-child(2):hover ~ #indicator {
+      left: 28.3%;
+    }
+
+    .navbar a:nth-child(3):hover ~ #indicator {
+      left: 58.2%;
+    }
+
+    .navbar a:nth-child(4):hover ~ #indicator {
+      left: 84.5%;
+    }
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 700px !important;
+    margin-bottom: 0rem !important;
+
+    .project-card {
+      padding-bottom: 5rem;
+      width: 700px !important;
+
+      .project-card-info {
+        max-width: 700px !important;
+        max-height: 437px !important;
+
+        figcaption {
+          width: 700px !important;
+        }
+      }
+    }
+  }
+
+  .about-me-container {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    width: 700px !important;
+
+    .button {
+      padding-bottom: 2rem;
+      width: 700px !important;
+    }
+
+    .visual-storyteller-card, .web-developer-card {
+      padding-bottom: 2rem !important;
+    }
+
+    .web-developer-card, .visual-storyteller-card {
+      flex-direction: column !important;
+      justify-content: center !important;
+
+      .web-delevoper-image img, .visual-storyteller-image img {
+        width: 700px !important;
+        height: 700px !important;
+      }
+
+      .web-developer-text {
+        width: 700px !important;
+        height: auto !important;
+        position: static !important;
+
+        h1 {
+          margin-top: 2rem;
+        }
+      }
+
+      .visual-storyteller-text {
+        width: 700px !important;
+        height: auto !important;
+        position: static !important;
+        padding-bottom: 2rem !important;
+      }
+    }
+
+    .random-facts-container {
+      width: 700px !important;
+      height: 400px !important;
+
+      .random-facts-header h1 {
+        margin: 0 auto;
+        padding: 2rem 0;
+        width: 700px !important;
+      }
+
+      .factsCarousel {
+        max-width: 700px !important;
+
+        .facts {
+          height: 93px !important;
+
+          h2 {
+            font-size: 40px !important;
+          }
+        }
+      }
+    }
+  }
+}
