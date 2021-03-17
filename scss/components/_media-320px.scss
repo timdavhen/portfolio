@@ -90,7 +90,7 @@
     width: 300px !important;
 
     .project-card {
-      padding-bottom: 3rem;
+      margin-bottom: 3rem;
       width: 300px !important;
 
       img {
@@ -100,7 +100,7 @@
 
       .project-card-info {
         max-width: 300px !important;
-        min-height: 172px !important;
+        max-height: 172px !important;
 
         figcaption {
           padding: 8px 13px;

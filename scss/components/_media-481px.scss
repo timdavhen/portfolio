@@ -75,15 +75,17 @@
     width: 500px;
 
     .project-card {
-      padding-bottom: 3rem;
-      width: 500px;
+      margin-bottom: 3rem !important;
+      width: 500px !important;
+      height: 312px !important;
 
       .project-card-info {
         max-width: 500px !important;
         max-height: 312px !important;
 
         figcaption {
-          width: 500px;
+          width: 500px !important;
+          height: 312px !important;
           padding: 8px 13px;
         }
 

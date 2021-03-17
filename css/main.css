@@ -236,7 +236,7 @@ button.fancy {
   position: relative;
   margin: 0 auto;
   max-width: 550px;
-  min-height: 344px;
+  max-height: 344px;
   color: #ffffff;
   text-align: center;
   background: transparent; }
@@ -404,14 +404,14 @@ figcaption {
     margin-bottom: 0rem !important;
     width: 300px !important; }
     .project-container .project-card {
-      padding-bottom: 3rem;
+      margin-bottom: 3rem;
       width: 300px !important; }
       .project-container .project-card img {
         max-width: 300px !important;
         max-height: 172px !important; }
       .project-container .project-card .project-card-info {
         max-width: 300px !important;
-        min-height: 172px !important; }
+        max-height: 172px !important; }
         .project-container .project-card .project-card-info figcaption {
           padding: 8px 13px; }
         .project-container .project-card .project-card-info h3 {
@@ -527,13 +527,15 @@ figcaption {
     margin-bottom: 0rem !important;
     width: 500px; }
     .project-container .project-card {
-      padding-bottom: 3rem;
-      width: 500px; }
+      margin-bottom: 3rem !important;
+      width: 500px !important;
+      height: 312px !important; }
       .project-container .project-card .project-card-info {
         max-width: 500px !important;
         max-height: 312px !important; }
         .project-container .project-card .project-card-info figcaption {
-          width: 500px;
+          width: 500px !important;
+          height: 312px !important;
           padding: 8px 13px; }
         .project-container .project-card .project-card-info h3 {
           font-size: 26px !important; }
@@ -617,7 +619,7 @@ figcaption {
     width: 700px !important;
     margin-bottom: 0rem !important; }
     .project-container .project-card {
-      padding-bottom: 5rem;
+      margin-bottom: 5rem;
       width: 700px !important; }
       .project-container .project-card .project-card-info {
         max-width: 700px !important;
