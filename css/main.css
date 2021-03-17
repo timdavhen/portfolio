@@ -94,10 +94,11 @@ button.fancy {
 
 .button {
   display: flex;
+  justify-content: left;
   cursor: pointer;
   align-items: center;
-  margin: 0 auto;
-  padding-bottom: 5rem; }
+  padding-bottom: 5rem;
+  width: 15%; }
   .button a {
     text-decoration: none;
     color: #FFFFFF; }
@@ -183,9 +184,11 @@ button.fancy {
 .navbar-container {
   text-align: center;
   margin: 0 auto;
-  max-width: 90%;
+  width: 90%;
   padding: 2rem 0 10rem 0; }
   .navbar-container .logo-navbar img {
+    position: relative;
+    right: 1px;
     width: 125px;
     height: 125px; }
   .navbar-container .logo-navbar:hover a {

@@ -119,10 +119,11 @@ button.fancy {
 
 .button {
   display: flex;
+  justify-content: left;
   cursor: pointer;
   align-items: center;
-  margin: 0 auto;
   padding-bottom: 5rem;
+  width: 15%;
 
   a {
     text-decoration: none;

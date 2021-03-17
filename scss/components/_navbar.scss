@@ -1,10 +1,12 @@
 .navbar-container {
   text-align: center;
   margin: 0 auto;
-  max-width: 90%;
+  width: 90%;
   padding: 2rem 0 10rem 0;
 
   .logo-navbar img {
+    position: relative;
+    right: 1px;
     width: 125px;
     height: 125px;
   }
