@@ -22,13 +22,32 @@
 
     #indicator {
       position: absolute;
-      left: 0.5%;
+      left: 3.8%;
       bottom: -5px;
       width: 30px;
       height: 3px;
-      background: linear-gradient(130deg, #ffffff, #121212);
+      background: transparent;
       border-radius: 5px;
-      transition: 0.4s ease left;
+    }
+
+    #about-me-indicator {
+      left: 54%;
+      border-radius: 5px;
+      position: absolute;
+      bottom: -5px;
+      width: 30px;
+      height: 3px;
+      background: linear-gradient(130deg, purple, palevioletred);
+    }
+
+    #projects-indicator {
+      left: 25.5%;
+      border-radius: 5px;
+      position: absolute;
+      bottom: -5px;
+      width: 30px;
+      height: 3px;
+      background: linear-gradient(130deg, yellow, red);
     }
   }
 
@@ -43,6 +62,7 @@
   }
 
   .navbar a:nth-child(1):hover ~ #indicator {
+    left: 3.8%;
     background: linear-gradient(130deg, #ffffff, #121212);
   }
 
@@ -52,12 +72,12 @@
   }
 
   .navbar a:nth-child(3):hover ~ #indicator {
-    left: 53.4%;
+    left: 54%;
     background: linear-gradient(130deg, purple, palevioletred);
   }
 
   .navbar a:nth-child(4):hover ~ #indicator {
-    left: 76.4%;
+    left: 76.7%;
     background: linear-gradient(130deg, #00e2ff, #89ff00);
   }
 }
