@@ -808,19 +808,11 @@ figcaption {
           padding: 0; }
           .about-me-container .random-facts-container .factsCarousel .facts h2 ul li {
             height: 45px;
-            margin-bottom: 45px;
-            display: block; }
+            margin-bottom: 45px; }
   .about-me-container .random-facts-container .flip8 {
-    -webkit-animation-name: flip8;
-    -webkit-animation-duration: 20s;
-    -webkit-animation-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1.2);
-    -webkit-animation-iteration-count: infinite;
-    animation-name: flip8;
-    animation-duration: 20s;
-    animation-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1.2);
-    animation-iteration-count: infinite; }
+    animation: flip8 20s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
 
-@-webkit-keyframes flip8 {
+@keyframes flip8 {
   0% {
     margin-top: -720px; }
   6.25% {
