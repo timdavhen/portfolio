@@ -41,24 +41,37 @@
       height: 100px;
     }
 
+    .navbar a:nth-child(1):hover ~ #indicator {
+      width: 26px;
+      left: 3.4%;
+    }
+
     .navbar a:nth-child(2):hover ~ #indicator {
-      left: 27.3%;
+      width: 26px;
+      left: 27.5%;
     }
 
     .navbar a:nth-child(3):hover ~ #indicator {
+      width: 26px;
       left: 56.4%;
     }
 
     .navbar a:nth-child(4):hover ~ #indicator {
+      width: 26px;
       left: 81.3%;
     }
 
     .navbar {
       width: 450px !important;
 
-      #indicator {
+      #about-me-indicator {
+        left: 56.4%;
         width: 26px;
-        left: 3.4%;
+      }
+
+      #projects-indicator {
+        width: 26px;
+        left: 27.5%;
       }
 
       a {

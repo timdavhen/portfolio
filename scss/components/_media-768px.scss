@@ -7,9 +7,17 @@
     .navbar {
       width: 600px !important;
 
-      #indicator {
-        left: 2.5%;
+      #about-me-indicator {
+        left: 58.2%;
       }
+
+      #projects-indicator {
+        left: 28.3%;
+      }
+    }
+
+    .navbar a:nth-child(1):hover ~ #indicator {
+      left: 2.5%;
     }
 
     .navbar a:nth-child(2):hover ~ #indicator {

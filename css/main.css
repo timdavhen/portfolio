@@ -398,17 +398,26 @@ figcaption {
     .navbar-container .logo-navbar img {
       width: 75px;
       height: 75px; }
+    .navbar-container .navbar a:nth-child(1):hover ~ #indicator {
+      width: 23px;
+      left: 2.8%; }
     .navbar-container .navbar a:nth-child(2):hover ~ #indicator {
+      width: 23px;
       left: 24%; }
     .navbar-container .navbar a:nth-child(3):hover ~ #indicator {
+      width: 23px;
       left: 53.4%; }
     .navbar-container .navbar a:nth-child(4):hover ~ #indicator {
+      width: 23px;
       left: 75.5%; }
     .navbar-container .navbar {
       width: 275px !important; }
-      .navbar-container .navbar #indicator {
+      .navbar-container .navbar #about-me-indicator {
+        left: 53.4%;
+        width: 23px; }
+      .navbar-container .navbar #projects-indicator {
         width: 23px;
-        left: 2.8%; }
+        left: 24%; }
       .navbar-container .navbar a {
         font-size: 14px !important;
         padding: 0 7px !important; }
@@ -526,17 +535,26 @@ figcaption {
     .navbar-container .logo-navbar img {
       width: 100px;
       height: 100px; }
+    .navbar-container .navbar a:nth-child(1):hover ~ #indicator {
+      width: 26px;
+      left: 3.4%; }
     .navbar-container .navbar a:nth-child(2):hover ~ #indicator {
-      left: 27.3%; }
+      width: 26px;
+      left: 27.5%; }
     .navbar-container .navbar a:nth-child(3):hover ~ #indicator {
+      width: 26px;
       left: 56.4%; }
     .navbar-container .navbar a:nth-child(4):hover ~ #indicator {
+      width: 26px;
       left: 81.3%; }
     .navbar-container .navbar {
       width: 450px !important; }
-      .navbar-container .navbar #indicator {
+      .navbar-container .navbar #about-me-indicator {
+        left: 56.4%;
+        width: 26px; }
+      .navbar-container .navbar #projects-indicator {
         width: 26px;
-        left: 3.4%; }
+        left: 27.5%; }
       .navbar-container .navbar a {
         font-size: 16px !important; }
   .project-container {
@@ -622,8 +640,12 @@ figcaption {
     padding: 1rem 0 5rem 0; }
     .navbar-container .navbar {
       width: 600px !important; }
-      .navbar-container .navbar #indicator {
-        left: 2.5%; }
+      .navbar-container .navbar #about-me-indicator {
+        left: 58.2%; }
+      .navbar-container .navbar #projects-indicator {
+        left: 28.3%; }
+    .navbar-container .navbar a:nth-child(1):hover ~ #indicator {
+      left: 2.5%; }
     .navbar-container .navbar a:nth-child(2):hover ~ #indicator {
       left: 28.3%; }
     .navbar-container .navbar a:nth-child(3):hover ~ #indicator {
