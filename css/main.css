@@ -406,14 +406,14 @@ figcaption {
       left: 24%; }
     .navbar-container .navbar a:nth-child(3):hover ~ #indicator {
       width: 23px;
-      left: 53.4%; }
+      left: 52.9%; }
     .navbar-container .navbar a:nth-child(4):hover ~ #indicator {
       width: 23px;
       left: 75.5%; }
     .navbar-container .navbar {
       width: 275px !important; }
       .navbar-container .navbar #about-me-indicator {
-        left: 53.4%;
+        left: 52.9%;
         width: 23px; }
       .navbar-container .navbar #projects-indicator {
         width: 23px;
