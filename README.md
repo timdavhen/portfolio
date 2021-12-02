@@ -1,1 +1,1 @@
-# My portoflio as a Front-End Designer.
+# My portfolio as a Frontend Developer.
